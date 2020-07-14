@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
- return render_template('form.html')
+ return "Please use a /submit post request to give the movie data and the response will be returned in json"
 
 @app.route('/submit', methods=['POST'])
 def submit():
